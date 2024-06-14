@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+* {
+    font-family: Alexandria;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #2f2300;
+}
+nav {
+    background-color: #D4BE83;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav img {
+    height: 3em;
+}
+#logo {
+    font-size: 1.7em;
+    color: #2f2300;
+}
+.container {
+    background: url(images/back.jpg);
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: #F1EAD7;
+}
+.container::after{
+    content: '';
+    width: 100%;
+    opacity: 0.4;
+    height: 90%;
+    background-color: black;
+    position: absolute;
+}
+.container h1 {
+    z-index: 999;
+}
+.container p {
+    z-index: 999;
+}
+#audioPlayer {
+    width: 45%;
+    height: 35px;
+    z-index: 999;
+}
+.selctions  {
+    z-index: 999;
+}
+.selctions select {
+    width: 200px;
+    height: 35px;
+    border: 3.5px solid #D4BE83;
+    background: #D4BE83;
+    border-radius: 5px;
+    outline: #F1EAD7;
+    margin: 10px;
+}
+.spans {
+    margin-right: 15px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 150px;
+}
+/*-------------------------------phones-design------------------------------------------*/
+@media only screen and (max-width: 414px){
+    nav {
+        height: 70px;
+    }
+    nav img {
+        height: 1.9em;
+    }
+    #logo {
+        font-size: 1.2em;
+    }
+
+    .selctions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;        
+    }
+    .selctions select {
+        width: 70%;
+        height: 40px;
+    }
+    span {
+        display: none;
+    }
+    #audioPlayer {
+        width: 70%;
+    }
+    .container{
+        height: 90vh;
+    }
+}
